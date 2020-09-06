@@ -20,6 +20,8 @@ function startGame() {
   let x = document.getElementById("line-blank");
   let p = document.getElementById("chance");
   let text = p.innerText;
+  if(text.length>8)
+    text = text.slice(0, text.length - 2);
   p.innerText = `${text} ${chance}`;
 
   for (let i = 0; i < word.length; i++) {
@@ -106,5 +108,9 @@ function reset() {
   let text = p.innerText;
   text = text.slice(0, text.length - 2);
   p.innerText = `${text} ${chance}`;
+
+  //reset the previous div otherwise it will append with previous
+  document.getElementById('line-blank').innerHTML="";
+  
   startGame();
 }
