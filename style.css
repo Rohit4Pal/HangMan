@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+.line-exist {
+  border-bottom-style: solid;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  flex-direction: row;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color: yellowgreen;
+}
+
+.line-not-exist {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  flex-direction: row;
+  padding-right: 20px;
+}
+#line-blank {
+  width: 100%;
+  height: 100px;
+}
+
+#result{
+  color: red;
+}
+
+footer{
+  text-align: center;
+}
